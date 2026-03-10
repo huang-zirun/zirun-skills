@@ -2,6 +2,8 @@
 
 个人收集与整理的 Agent Skills，供 Cursor / Claude/Trae 等 AI 助手按场景调用。
 
+> **最后更新**: 2026-03-11
+
 ## 技能列表
 
 <!--
