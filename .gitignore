@@ -1,0 +1,48 @@
+# --- 系统与桌面 ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- 编辑器 / IDE ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+.env
+.env.local
+*.egg-info/
+.eggs/
+dist/
+*.egg
+
+# --- Node（部分技能含 JS 模板时使用）---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+
+# --- 构建与缓存 ---
+build/
+.cache/
+*.log
+*.tmp
+*.temp
+temp/
+tmp/
+
+# --- 可选：本地/个人配置（不提交到仓库）---
+*.local
+.local/
