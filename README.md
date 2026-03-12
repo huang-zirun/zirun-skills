@@ -2,7 +2,7 @@
 
 个人收集与整理的 Agent Skills，供 Cursor / Claude/Trae 等 AI 助手按场景调用。
 
-> **最后更新**: 2026-03-11
+> **最后更新**: 2026-03-12
 
 ## 技能列表
 
@@ -56,6 +56,8 @@ skills:
     description: 为用户撰写周报中的"想法记录"部分。当用户提到"写周报想法"、"周报想法记录"、"周报思考"、"写想法"等时触发。专注于从具体工作场景中提炼认知方法论，采用哲学思辨风格，用一段连贯的文字表达，结尾有金句升华。
   - path: xlsx
     description: Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file; create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.
+  - path: research-paper-writing
+    description: Improve academic paper writing quality for ML/CV/NLP-style papers with clear section structure, paragraph flow, and reviewer-facing presentation. Use when drafting or revising Abstract, Introduction, Related Work, Method, Experiments, or Conclusion; polishing figures/tables; checking claim-support alignment; or performing self-review before submission.
 ```
 
 **文件树**（由上述 `skills` 按 path 层级展开，更新 YAML 后请重生成此块）：
@@ -100,6 +102,8 @@ zirun-skills/
 │   Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.
 ├── weekly-report-insight/
 │   为用户撰写周报中的"想法记录"部分。当用户提到"写周报想法"、"周报想法记录"、"周报思考"、"写想法"等时触发。专注于从具体工作场景中提炼认知方法论，采用哲学思辨风格，用一段连贯的文字表达，结尾有金句升华。
+├── research-paper-writing/
+│   Improve academic paper writing quality for ML/CV/NLP-style papers with clear section structure, paragraph flow, and reviewer-facing presentation. Use when drafting or revising Abstract, Introduction, Related Work, Method, Experiments, or Conclusion; polishing figures/tables; checking claim-support alignment; or performing self-review before submission.
 └── xlsx/
     Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like "the xlsx in my downloads") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.
 ```
