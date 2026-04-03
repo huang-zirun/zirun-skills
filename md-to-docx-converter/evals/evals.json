@@ -1,0 +1,50 @@
+{
+  "skill_name": "md-to-docx-converter",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Convert the file report.md to a Word document",
+      "expected_output": "A .docx file named report.docx is created with proper Chinese formatting (SimSun for body, SimHei for headings, Times New Roman for English)",
+      "files": ["evals/files/report.md"],
+      "expectations": [
+        "The script convert_report_to_docx.py is executed",
+        "A .docx file is generated",
+        "The output file has proper Chinese font formatting"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I need to convert my Markdown file input.md to output.docx",
+      "expected_output": "A .docx file named output.docx is created from input.md",
+      "files": ["evals/files/input.md"],
+      "expectations": [
+        "The script is called with both input and output file paths",
+        "The output file is named output.docx",
+        "The conversion completes without errors"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Generate the Word document from the default markdown file",
+      "expected_output": "The default file 技术可行性报告正文.md is converted to 技术可行性报告正文.docx",
+      "files": [],
+      "expectations": [
+        "The script looks for the default markdown file",
+        "If found, converts it to .docx format",
+        "Reports the location of the generated file"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Convert this markdown to Word format with proper Chinese fonts",
+      "expected_output": "The markdown file is converted with SimSun (宋体) for body text and SimHei (黑体) for headings",
+      "files": ["evals/files/chinese-doc.md"],
+      "expectations": [
+        "The conversion applies Chinese typography standards",
+        "Body text uses SimSun font",
+        "Headings use SimHei font",
+        "English text uses Times New Roman"
+      ]
+    }
+  ]
+}
